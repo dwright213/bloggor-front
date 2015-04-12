@@ -1,3 +1,5 @@
-{{#each blog in blogs}}
-  {{link-to name 'blogs.show' this}}
-{{/each}}
+<ul>
+  {{#each}}
+    <li>{{link-to title 'blogs.show' this}}</li>
+  {{/each}}
+</ul>

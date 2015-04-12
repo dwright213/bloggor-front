@@ -7,6 +7,10 @@ var Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('about');
+  this.resource('blogs', function() {
+    this.route('show', {path: ':blog_id'});
+  });
 });
+
 
 export default Router;

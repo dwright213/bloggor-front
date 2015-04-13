@@ -1,7 +1,12 @@
 # Bloggor-front
 
-this is an Ember based front end for the Rails driven "Bloggor" interface. It assumes you have Bloggor running somewhere and are adding blogs entries using it's simple html interface. The purpose of bloggor-front is to replace the author's current wordpress driven site.  
-http://www.danwright.co
+This is an Ember based front end for the Rails driven "Bloggor" app. It assumes you have Bloggor running somewhere and are adding blogs entries using it's simple html interface. The purpose of bloggor-front is to replace the author's current wordpress driven site.  
+
+2015, http://www.danwright.co  
+
+GPLv2  
+
+
 
 ## Prerequisites
 

@@ -1,16 +1,15 @@
 import Ember from 'ember';
 import EmberPusher from 'ember-pusher';
 
-export default Ember.Controller.extend(EmberPusher.ClientEvents, {
+export default Ember.Controller.extend(EmberPusher.Bindings, {
   logPusherEvents: true,
   PUSHER_SUBSCRIPTIONS: {
-    bloggor: ['new-blog']
+    blogsChannel: ['new-blog']
   },
-
   actions: {
     newBlog: function(payload) {
-      console.log('triggered!');
-      this.store.pushPayload(payload);
+      console.log(payload);
+      this.store.pushPayload('blog', payload);
     }
   }
 

@@ -29,7 +29,8 @@ module.exports = function(environment) {
     APP: {
       PUSHER_OPTS: {
         key: '1e5793784101bb7963f6',
-        connection: {}
+        connection: {},
+        logAllEvents: true
       }
     }
   };

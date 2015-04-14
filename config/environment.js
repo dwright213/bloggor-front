@@ -13,19 +13,24 @@ module.exports = function(environment) {
       }
     },
 
+
+
+
   contentSecurityPolicy : {
     'default-src': "'none'",
-    'script-src': "'self' https://cdn.mxpnl.com", // Allow scripts from https://cdn.mxpnl.com
+    'script-src': "'self' https://cdn.mxpnl.com http://stats.pusher.com", // Allow scripts from https://cdn.mxpnl.com
     'font-src': "'self' http://maxcdn.bootstrapcdn.com", // Allow fonts to be loaded from http://fonts.gstatic.com
-    'connect-src': "'self' https://api.mixpanel.com http://custom-api.local", // Allow data (ajax/websocket) from api.mixpanel.com and custom-api.local
+    'connect-src': "'self' https://api.mixpanel.com http://custom-api.local ws://ws.pusherapp.com", // Allow data (ajax/websocket) from api.mixpanel.com and custom-api.local
     'img-src': "'self'",
     'style-src': "'self' 'unsafe-inline' http://maxcdn.bootstrapcdn.com",
     'media-src': "'self'"
   },
 
     APP: {
-      // Here you can pass flags/options to your application instance
-      // when it is created
+      PUSHER_OPTS: {
+        key: '1e5793784101bb7963f6',
+        connection: {}
+      }
     }
   };
 

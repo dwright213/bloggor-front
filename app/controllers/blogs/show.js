@@ -6,6 +6,7 @@ export default Ember.Controller.extend(EmberPusher.Bindings, {
   PUSHER_SUBSCRIPTIONS: {
     blogsChannel: ['new-blog', 'delete-blog' ]
   },
+
   actions: {
     newBlog: function(payload) {
       console.log(payload);
@@ -13,11 +14,14 @@ export default Ember.Controller.extend(EmberPusher.Bindings, {
     },
     deleteBlog: function(payload) {
       console.log(payload.blog.id);
+      this.transitionToRoute('blogs');
 
       this.store.find('blog', payload.blog.id).then(function (blog) {
         blog.deleteRecord();
       });
     }
+
+
   }
 
 });

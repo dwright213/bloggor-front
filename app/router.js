@@ -6,6 +6,7 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.resource('home', {path: '/home'});
   this.route('about');
   this.resource('blogs', function() {
     this.route('show', {path: ':blog_id'});

@@ -1,4 +1,4 @@
-.navbar-inverse {
+#bloggor-nav {
   border-radius: 0px;
 }
 
@@ -11,9 +11,22 @@ h1, h2, h3, h4, h5 {
 }
 
 #bloggor-nav .active {
-  color: #ff61e7;
+  color: #ff00d9;
 }
 
-#bloggor-nav .navbar-inverse {
-  linear-gradient(#ff61e7, 60%, #70787d)
+#bloggor-nav {
+  background: linear-gradient(
+                hsla(0, 0%, 0%, 1),
+                hsla(0, 0%, 0%, 0));
+  margin-bottom: 10px;
+}
+
+.navbar-nav > li:hover {
+  background: linear-gradient(
+                hsla(0, 0%, 0%, 0),
+                hsla(0, 0%, 100%, 0.15));
+}
+
+#title #title:hover {
+  background: hsla(0, 0%, 0%, 0);
 }

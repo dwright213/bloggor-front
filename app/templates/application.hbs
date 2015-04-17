@@ -1,17 +1,21 @@
-  <nav id="bloggor-nav" class="navbar-fixed-top navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <ul class="nav navbar-nav">
-          <li>{{ link-to 'Home' 'home' }}</li>
-          <li>{{ link-to 'About' 'about' }}</li>
-          <li>{{ link-to 'Blogs' 'blogs' }}</li>
-        </ul>
-      </div>
+<nav id="bloggor-nav" class="navbar-fixed-top navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <ul class="nav navbar-nav">
+        <li>{{ link-to 'Home' 'home' }}</li>
+        <li>{{ link-to 'About' 'about' }}</li>
+        <li>{{ link-to 'Blogs' 'blogs' }}</li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
 
 <div id="main-body" class="container-fluid">
-  <div class="col-md-8 offset-2">
+  <div class="col-md-10 col-md-offset-1">
     {{outlet}}
   </div>
+</div>
+
+<div id="footer" class="col-md-12">
+  FOOTER CONTENT
 </div>

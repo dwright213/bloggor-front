@@ -1,11 +1,16 @@
-<div class="col-xs-10 offset-3">
   <div class="panel panel-primary">
     <div class="panel-heading">
       <h3 class="panel-title">{{model.title}}</h3>
     </div>
     <div class="panel-body">
-      <div class="col-xs-2 col-xs-offset-10">{{model.created_at}}</div>
+
+
+      <div class="col-xs-12 panel-date">
+        {{moment model.created_at "MMM Do YYYY" iso}}
+      </div>
+
+      <div class="panel-text">
       {{model.body}}
+      </div>
     </div>
   </div>
-</div>

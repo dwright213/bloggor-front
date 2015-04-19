@@ -7,6 +7,7 @@ export default Ember.Controller.extend(EmberPusher.Bindings, {
     blogsChannel: ['new-blog', 'delete-blog' ]
   },
 
+
   actions: {
     newBlog: function(payload) {
       console.log(payload);

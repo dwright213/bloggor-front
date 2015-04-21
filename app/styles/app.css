@@ -103,10 +103,6 @@ a:hover, a:focus {
   margin-bottom: 1rem;
 }
 
-/*.ember-application, .ember-view {
-  height: 100%;
-}*/
-
 #footer {
   position: absolute;
   bottom: 0;

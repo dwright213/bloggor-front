@@ -6,8 +6,6 @@ export default Ember.Controller.extend(EmberPusher.Bindings, {
   PUSHER_SUBSCRIPTIONS: {
     blogsChannel: ['new-blog', 'delete-blog' ]
   },
-
-
   actions: {
     newBlog: function(payload) {
       console.log(payload);
@@ -21,8 +19,5 @@ export default Ember.Controller.extend(EmberPusher.Bindings, {
         blog.deleteRecord();
       });
     }
-
-
   }
-
 });

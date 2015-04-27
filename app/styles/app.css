@@ -19,27 +19,36 @@ body > .ember-view {
 }
 
 h1, h2, h3, h4, h5 {
-  color: #ff00d9;
+  color: #fff;
 }
 
-a, a:visited, a:active {
-  color: #9d9d9d;
-
-}
-
-a:hover, a:focus {
+a, a:visited {
   color: #fff;
   text-decoration: none;
 }
 
+a:hover, a:focus {
+  color: #9d9d9d;
+  text-decoration: none;
+}
+
 /* Navigation stuff */
+
 #bloggor-nav {
   border-radius: 0;
 }
 
 #bloggor-nav .active {
   color: #ff00d9;
+  text-decoration: none;
 }
+
+
+#bloggor-nav a:visited a:focus {
+  color: #ff00d9;
+  text-decoration: none;
+}
+
 
 #bloggor-nav {
   background: linear-gradient(
@@ -55,14 +64,22 @@ a:hover, a:focus {
                 );
 }
 
+/* Blog and Content panels */
+
 #main-body {
   padding-top: 5rem;
   padding-bottom: 5rem;
-
 }
 
+#main-body a, a:visited {
+  color: #fff;
+  text-decoration: underline;
+}
 
-/* Blog and Content panels */
+#main-body a:hover, a:focus {
+  color: #9d9d9d;
+  text-decoration: none;
+}
 
 .panel {
   background: hsla(0, 0%, 100%, 0);
@@ -95,13 +112,13 @@ a:hover, a:focus {
       hsla(0, 0%, 0%, 0) 20px,
       hsla(0, 0%, 0%, 0) 40px /* determines size */
     );
-
 }
 
 .panel-text {
   margin-top: 1.5rem;
   margin-bottom: 1rem;
 }
+
 
 #footer {
   position: absolute;

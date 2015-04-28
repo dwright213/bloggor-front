@@ -13,7 +13,6 @@ export default Ember.Controller.extend(EmberPusher.Bindings, {
     },
     deleteBlog: function(payload) {
       console.log(payload.blog.id);
-
       this.store.find('blog', payload.blog.id).then(function (blog) {
         blog.deleteRecord();
       });

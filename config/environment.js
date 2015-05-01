@@ -20,7 +20,7 @@ module.exports = function(environment) {
     'default-src': "'none'",
     'script-src': "'self' https://cdn.mxpnl.com http://stats.pusher.com", // Allow scripts from https://cdn.mxpnl.com
     'font-src': "'self' https://maxcdn.bootstrapcdn.com", // Allow fonts to be loaded from http://fonts.gstatic.com
-    'connect-src': "'self' https://api.mixpanel.com http://custom-api.local ws://ws.pusherapp.com http://bloggor.herokuapp.com", // Allow data (ajax/websocket) from api.mixpanel.com and custom-api.local
+    'connect-src': "'self' https://api.mixpanel.com http://custom-api.local ws://ws.pusherapp.com http://bloggor.danwrighteo.us", // Allow data (ajax/websocket) from api.mixpanel.com and custom-api.local
     'img-src': "'self' http://i0.kym-cdn.com www.unsigneddesign.com",
     'style-src': "'self' 'unsafe-inline' https://maxcdn.bootstrapcdn.com",
     'media-src': "'self'"

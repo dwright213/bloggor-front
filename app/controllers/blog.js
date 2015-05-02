@@ -12,5 +12,4 @@ export default Ember.Controller.extend(EmberPusher.Bindings, {
       this.store.pushPayload('blog', payload);
     }
   }
-
 });
